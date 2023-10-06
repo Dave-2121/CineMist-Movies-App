@@ -16,9 +16,11 @@ This project is a Movie App that utilizes the [TMDB Movie Database API](https://
 - Utilize local storage to keep your movie selections intact, even if you leave and come back to the app.
 
 ## Watch the Demo
+Before diving into the project, you can test a live webpage here: https://cinemist-devsharma.netlify.app/
+
 https://github.com/Dave-2121/CineMist-Movies-App/assets/130779932/c8625713-86f3-446c-84fe-9d3d20888916
 
-Before diving into the project, you can watch a demo of the Movie App in action [here](#).
+
 
 ## User Instructions
 
