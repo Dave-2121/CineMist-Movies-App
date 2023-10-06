@@ -1,0 +1,140 @@
+:root {
+  --color-background-black: #161618;
+  --color-primary: rgb(255, 255, 255);
+  --color-light-grey: #828282;
+  --color-shade-white: #ebf6f7;
+  --gradient-1: radial-gradient(
+    circle at 10% 20%,
+    rgb(87, 108, 117) 0%,
+    rgb(37, 50, 55) 100.2%
+  );
+  --text-header-1: #615551;
+  --light-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --watch-later-text: #655a56;
+}
+
+.watch-later h2 {
+  text-transform: uppercase;
+  font-family: inherit;
+  color: #fff;
+  transform: skewY(-3deg);
+  text-align: center;
+  font-weight: 500;
+}
+
+.watch-later-list {
+  list-style: none;
+  max-height: 77rem;
+  overflow: scroll;
+  color: var(--color-shade-white);
+}
+
+.copyright {
+  color: black;
+  font-size: 1.2rem;
+  margin-top: auto;
+  text-align: center;
+}
+.copyright a {
+  text-decoration: none;
+}
+.copyright a:visited,
+.copyright a:active {
+  color: var(--color-shade-white);
+  text-decoration: underline white;
+}
+.copyright a {
+  text-decoration: underline white;
+}
+.copyright a:hover {
+  opacity: 0.7;
+}
+.watch-later {
+  grid-row: 2;
+  grid-column: 3;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.watch-later-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem 0;
+}
+.watch-later-img {
+  margin-right: 2rem;
+  margin-bottom: 10px;
+  width: 50px;
+  flex: 0 0 3rem;
+  height: 3.5rem;
+}
+.watch-later-img img {
+  width: 100%;
+}
+
+.watch-later-deleteBtn {
+  position: absolute;
+  right: 0;
+  border: none;
+  padding: 5px;
+  background: transparent;
+  font-size: 18px;
+  transition: all ease 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+.watch-later-deleteBtn i {
+  color: coral;
+  cursor: pointer;
+}
+
+.watch-later-item:hover .watch-later-deleteBtn {
+  opacity: 1;
+  visibility: visible;
+}
+
+.watch-later {
+  background-color: #1f2833;
+}
+
+/* .watch-later-list {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.watch-later-list::-webkit-scrollbar {
+  display: none; 
+}
+ */
+
+/* .watch-later-list::-webkit-scrollbar {
+  display: -webkit-box;
+} */
+
+.watch-later-list::-webkit-scrollbar-track {
+  background: var(--color-light-grey); /* color of the tracking area */
+}
+.watch-later-list::-webkit-scrollbar-thumb {
+  background-color: blue; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid orange; /* creates padding around scroll thumb */
+}
+.watch-later-list::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+.watch-later-list {
+  cursor: default;
+}
+
+.watch-later {
+  cursor: default;
+}
+
+.copyright,
+.copyright a {
+  color: var(--color-shade-white);
+}

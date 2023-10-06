@@ -1,0 +1,158 @@
+:root {
+  --color-background-black: #161618;
+  --color-primary: rgb(255, 255, 255);
+  --color-light-grey: #828282;
+  --color-shade-white: #ebf6f7;
+  --gradient-1: radial-gradient(
+    circle at 10% 20%,
+    rgb(87, 108, 117) 0%,
+    rgb(37, 50, 55) 100.2%
+  );
+  --text-header-1: #615551;
+  --light-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --light-text: #a0a0a0;
+}
+.search-results {
+  padding: 3rem 0;
+  grid-row: 2;
+  position: relative;
+}
+
+.results {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.pagination {
+  margin-top: auto;
+  padding: 0 3rem;
+}
+
+.preview__link:link,
+.preview__link:visited {
+  border-right: 1px solid #fff;
+  align-items: center;
+  padding: 1.5rem 1.2rem;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: flex;
+}
+
+.preview__fig {
+  backface-visibility: hidden;
+  border-radius: 50%;
+  flex: 0 0 4.5rem;
+  height: 4.5rem;
+  margin-right: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.preview__data {
+  grid-template-columns: 1fr 2rem;
+  align-items: center;
+  row-gap: 0.1rem;
+  width: 100%;
+  display: grid;
+}
+
+.preview__title {
+  color: #f38e82;
+  color: #6082b6;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  grid-column: 1 / -1;
+  max-width: 25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.preview__fig img {
+  width: 100%;
+}
+
+.preview__publisher {
+  white-space: nowrap;
+  color: #7393b3;
+}
+
+.preview__link:link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: translateY(-0.2rem);
+}
+
+element.style {
+}
+.pagination__btn--next {
+  float: right;
+}
+.btn--inline {
+  color: #f38e82;
+  color: var(--color-background-black);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.8rem 1.2rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+.pagination__btn--next {
+  float: right;
+}
+.pagination__btn--prev {
+  float: left;
+}
+.btn--inline span {
+  margin: 0 5px;
+}
+
+.btn--inline:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.active-link {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sort-Btn {
+  background-color: transparent;
+  font-size: 1.4rem;
+  border: none;
+  position: absolute;
+  top: 9px;
+  right: 145px;
+  cursor: pointer;
+}
+
+.sort-Btn i {
+  color: #161618;
+}
+
+.tooltip {
+  visibility: hidden;
+  z-index: 1;
+  position: absolute;
+
+  font-size: 1rem;
+  width: 100px;
+  color: white;
+  font-size: 12px;
+  background-color: #192733;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+  transition: all 0.3s ease;
+}
+
+.sort-Btn:hover .tooltip {
+  visibility: visible;
+}
+
+.sort-Btn:active {
+  transform: translateY(3px);
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CINEMIST !ALL YOUR FAVOURITE MOVIES IN ONE PLACE</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="./src/img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./src/sass/_main.css" />
+    <script
+      src="https://kit.fontawesome.com/3d652f97b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./src/js/controller.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logodiv">
+          <img src="./src/img/1-removebg-preview.png" alt="logo" />
+          <h1>CINEMIST</h1>
+        </div>
+
+        <form class="form">
+          <div class="col-eft">
+            <input
+              type="text"
+              class="search__field"
+              placeholder="search for your favourite movies..."
+            />
+            <span class="focus-bg"></span>
+          </div>
+          <button class="btn btn__search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>SEARCH</span>
+          </button>
+        </form>
+        <nav>
+          <ul>
+            <li class="nav__item">
+              <button class="nav__btn nav__btn-fav">
+                <i class="fa-solid fa-heart"></i>
+                <span>favourites</span>
+              </button>
+              <div class="favourites__tab">
+                <ul class="favourites-list">
+                  <div class="message">
+                    <p>add your favourites 😍</p>
+                  </div>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="search-results">
+        <!-- <div>
+          <button class="sort-Btn">
+            <i class="fa-solid fa-sort"></i>
+            <span class="tooltip">sort by date</span>
+          </button>
+        </div> -->
+        <ul class="results">
+          <!-- <li class="preview">
+            <a class="preview__link preview__link--active" href="#23456">
+              <figure class="preview__fig">
+                <img src="./src/img/test1.png" alt="Test" />
+              </figure>
+              <div class="preview__data">
+                <h4 class="preview__title">Pasta with Tomato Cream ...</h4>
+                <p class="preview__publisher">The Pioneer Woman</p>
+              </div>
+            </a>
+          </li>
+          <li class="preview">
+            <a class="preview__link preview__link--active" href="#23456">
+              <figure class="preview__fig">
+                <img src="./src/img/test1.png" alt="Test" />
+              </figure>
+              <div class="preview__data">
+                <h4 class="preview__title">Pasta with Tomato Cream ...</h4>
+                <p class="preview__publisher">The Pioneer Woman</p>
+              </div>
+            </a>
+          </li> -->
+        </ul>
+        <div class="pagination">
+          <!-- <button class="btn--inline pagination__btn--prev">
+            <i class="fa-solid fa-angle-left"></i>
+            <span>Page 1</span>
+          </button>
+          <button class="btn--inline pagination__btn--next">
+            <span>Page 3</span>
+            <i class="fa-solid fa-angle-right"></i>
+          </button> -->
+        </div>
+      </div>
+      <div class="movie-results">
+        <!-- <div class="spinner">
+          <img src="./src/img/spinner.png" class="spinner-png" />
+        </div> -->
+        <!-- <div class="error">
+          <p>Sorry no query found! 😣</p>
+        </div> -->
+        <div class="movie-results-message">
+          <i class="fa-solid fa-film"></i>
+          <p>start searching for your favourite movies!</p>
+        </div>
+        <!-- <div class="flex-up">
+          <div class="movie__fig">
+            <img src="./src/img/test1.png" alt="" class="movie-img" />
+          </div>
+          <div class="movie__fig-details">
+            <h2 class="movie-title">TEST-BAT</h2>
+            <div class="movie-rating">
+              <i class="fa-solid fa-star star"></i>
+              <h3>9.0</h3>
+            </div>
+            <div class="details">
+              <span>Rated R</span>
+              <span>2022</span>
+              <span>2hrs 34min</span>
+            </div>
+            <div class="genre">
+              <div>Action</div>
+              <div>Crime</div>
+              <div>Drama</div>
+            </div>
+            <button class="fav-btn">
+              <i class="fa-solid fa-heart"></i>
+            </button>
+          </div>
+        </div>
+        <div class="flex-down">
+          <div class="plot">
+            <h1>Plot:</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              accusantium dolore, impedit quaerat, iusto dolores, voluptates cum
+              accusamus illo porro natus? Ab ipsam accusamus voluptas error
+              facilis quisquam quam nihil.
+            </p>
+          </div>
+          <div class="cast">
+            <h1>Cast:</h1>
+            <p>Robert PAttinson,zoe kravitz</p>
+          </div>
+          <div class="watch-later-button">
+            <button class="btn-wl">
+              <span>add to watch later</span>
+              <i class="fa-regular fa-clock"></i>
+            </button>
+          </div>
+        </div> -->
+      </div>
+      <div class="watch-later">
+        <h2 class="watch-later-h1">watch later</h2>
+        <ul class="watch-later-list">
+          <!-- <li class="watch-later-item">
+            <div class="watch-later-img">
+              <img src="./src/img/test1.png" alt="" />
+            </div>
+            <p class="watch-later-description">THE BATMAN</p>
+            <button class="watch-later-deleteBtn">
+              <i class="fa-solid fa-circle-xmark"></i>
+            </button>
+          </li>
+          <li class="watch-later-item">
+            <div class="watch-later-img">
+              <img src="./src/img/logo.png" alt="" />
+            </div>
+            <p class="watch-later-description">THE BATMAN</p>
+            <button class="watch-later-deleteBtn">
+              <i class="fa-solid fa-circle-xmark"></i>
+            </button>
+          </li> -->
+        </ul>
+        <div class="copyright">
+          ©
+          <a href="https://github.com/Dave-2121" target="_blank">DEV SHARMA</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
