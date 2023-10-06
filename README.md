@@ -36,6 +36,11 @@ git clone https://github.com/your-username/movie-app.git
 
 4. **Explore and Enjoy:** Access the Movie App in your web browser and begin exploring your favorite movies, adding them to your lists, and enjoying all the features this project has to offer.
 
+## Known Issues
+Please note the following known issues:
+
+Non-Responsive: This application is currently optimized for desktop use. While it may work on mobile devices, we recommend using it on desktops for the best experience.
+
 ## Credits
 
 - TMDB API for providing movie data: [TMDB API](https://www.themoviedb.org/)
