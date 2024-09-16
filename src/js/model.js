@@ -87,7 +87,7 @@ const loadSearchedMovie = async function (query) {
   try {
     state.search.query = query;
     const data = await AJAX(
-      `https://api.themoviedb.org/3//search/movie?query=${query}&api_key=d2082228c7efcc22b9d36dac09154033`
+      `https://api.themoviedb.org/3/search/movie?query=${query}&api_key=d2082228c7efcc22b9d36dac09154033`
     );
     state.search.results = data.results.map((movie) => {
       return {
